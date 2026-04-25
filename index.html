@@ -388,7 +388,7 @@
 
     <!-- ========================= NAVBAR ========================= -->
     <nav id="navbar"
-        class="fixed top-9 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
+        class="fixed top-9 w-full z-[61] bg-background/80 backdrop-blur-xl border-b border-white/5 transition-all duration-300">
         <div class="flex justify-between items-center max-w-7xl mx-auto px-6 h-16">
             <a href="#home"
                 class="text-xl font-bold text-primary tracking-tighter font-headline flex items-center gap-2">
@@ -406,9 +406,11 @@
                 <a id="nav-contact" class="nav-link hover:text-primary transition-colors" href="#contact">Contact</a>
             </div>
             <div class="flex items-center gap-4">
-                <a href="https://www.linkedin.com/in/khairul-anwar-5a3662180/" target="_blank"
-                    class="hidden md:inline-flex bg-primary/10 text-primary border border-primary/20 px-5 py-2 rounded-md font-label text-sm font-semibold transition-all duration-300 hover:bg-primary hover:text-on-primary items-center gap-2">
-                    <span class="material-symbols-outlined text-base">open_in_new</span> LinkedIn
+                <a href="cv.html" target="_blank"
+                    style="cursor:pointer; pointer-events:all; position:relative; z-index:10;"
+                    class="hidden md:inline-flex items-center gap-2 bg-primary text-on-primary px-5 py-2 rounded-md font-label text-sm font-semibold transition-all duration-300 hover:opacity-85 hover:shadow-[0_0_20px_rgba(0,209,255,0.35)] active:scale-95">
+                    <span class="material-symbols-outlined text-base" style="pointer-events:none;">download</span>
+                    <span style="pointer-events:none;">Download CV</span>
                 </a>
                 <button id="mobile-menu-btn"
                     class="md:hidden text-on-surface-variant hover:text-primary transition-colors p-2">
@@ -471,6 +473,7 @@
                         class="bg-primary text-on-primary px-7 py-3 rounded-md font-headline font-bold hover:shadow-[0_0_24px_rgba(0,209,255,0.4)] transition-all duration-300 flex items-center gap-2">
                         <span class="material-symbols-outlined text-lg">folder_open</span> View Work
                     </a>
+                    </a>
                     <a href="https://www.linkedin.com/in/khairul-anwar-5a3662180/" target="_blank"
                         class="flex items-center gap-2 px-5 py-3 bg-surface-container-high border border-white/5 hover:border-primary/50 hover:text-primary transition-all rounded-md font-label text-sm font-semibold text-on-surface-variant">
                         <i class="fa-brands fa-linkedin-in text-primary text-base"></i> LinkedIn
@@ -482,6 +485,13 @@
                     <a href="https://www.instagram.com/leopugjelly/" target="_blank"
                         class="flex items-center gap-2 px-5 py-3 bg-surface-container-high border border-white/5 hover:border-primary/50 hover:text-primary transition-all rounded-md font-label text-sm font-semibold text-on-surface-variant">
                         <i class="fa-brands fa-instagram text-primary text-base"></i> Instagram
+                    </a>
+                    <a href="mailto:khairulanwaarrrr@gmail.com"
+                        class="flex items-center gap-3 px-5 py-3 bg-surface-container-high border border-white/5 hover:border-primary/50 transition-all rounded-md group">
+                        <i
+                            class="fa-solid fa-envelope text-primary text-lg group-hover:scale-110 transition-transform inline-block"></i>
+                        <span
+                            class="font-label text-sm font-semibold text-on-surface-variant group-hover:text-primary">Email</span>
                     </a>
                 </div>
             </div>
@@ -957,7 +967,7 @@
                                 class="bg-primary/10 text-primary border border-primary/20 text-xs font-label font-semibold px-3 py-1 rounded-full">DAX</span>
                             <span
                                 class="bg-primary/10 text-primary border border-primary/20 text-xs font-label font-semibold px-3 py-1 rounded-full">Data
-                                Viz</span>
+                                Visualization</span>
                         </div>
                     </div>
                 </div>
@@ -1044,6 +1054,89 @@
         </div>
     </section>
 
+    <!-- ========================= WHY HIRE ME ========================= -->
+    <section id="why-hire-me" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <span class="font-label text-xs uppercase tracking-[0.3em] text-primary font-bold">Value
+                    Proposition</span>
+                <h2
+                    class="text-5xl md:text-6xl font-headline font-bold text-on-surface tracking-tighter mt-2 glow-blue">
+                    Why Hire <span class="text-primary">Me?</span>
+                </h2>
+                <p class="text-on-surface-variant mt-4 text-lg font-light">What I bring to every team and project</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+
+                <!-- Card 1 -->
+                <div
+                    class="group relative bg-surface-container-low kinetic-border rounded-xl p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,209,255,0.10)] overflow-hidden">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl">
+                    </div>
+                    <div
+                        class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-xl">military_tech</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-base text-on-surface mb-2">5+ Years QA Experience</h3>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">Proven track record across
+                        banking and enterprise systems, delivering quality at every stage of the SDLC.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="group relative bg-surface-container-low kinetic-border rounded-xl p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,209,255,0.10)] overflow-hidden"
+                    style="transition-delay:0.06s">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl">
+                    </div>
+                    <div
+                        class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-xl">layers</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-base text-on-surface mb-2">Manual + Automation + Data
+                        Testing</h3>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">Full-spectrum tester — from
+                        detailed test case execution to scalable Playwright frameworks and ETL validation.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="group relative bg-surface-container-low kinetic-border rounded-xl p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,209,255,0.10)] overflow-hidden"
+                    style="transition-delay:0.12s">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl">
+                    </div>
+                    <div
+                        class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-xl">bolt</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-base text-on-surface mb-2">Fast Learner, Independent Worker
+                    </h3>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">Quickly adapts to new tools,
+                        domains, and environments — delivering results with minimal hand-holding and maximum ownership.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="group relative bg-surface-container-low kinetic-border rounded-xl p-7 hover:border-primary/50 hover:-translate-y-1 transition-all duration-300 hover:shadow-[0_8px_32px_rgba(0,209,255,0.10)] overflow-hidden"
+                    style="transition-delay:0.18s">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-xl">
+                    </div>
+                    <div
+                        class="w-11 h-11 bg-primary/10 rounded-xl flex items-center justify-center mb-5 group-hover:bg-primary/20 transition-colors">
+                        <span class="material-symbols-outlined text-primary text-xl">bar_chart</span>
+                    </div>
+                    <h3 class="font-headline font-bold text-base text-on-surface mb-2">Dashboard &amp; Reporting
+                        Expertise</h3>
+                    <p class="text-on-surface-variant text-sm font-light leading-relaxed">Build actionable Power BI
+                        dashboards that transform raw test &amp; ETL data into clear business insights for stakeholders.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ========================= CONTACT ========================= -->
     <section id="contact" class="py-24 px-6">
         <div class="max-w-2xl mx-auto">
@@ -1086,6 +1179,14 @@
                         <span
                             class="font-label text-sm font-semibold text-on-surface-variant group-hover:text-primary">Instagram</span>
                     </a>
+                    <a href="mailto:khairulanwaarrrr@gmail.com"
+                        class="flex items-center gap-3 px-5 py-3 bg-surface-container-high border border-white/5 hover:border-primary/50 transition-all rounded-md group">
+                        <i
+                            class="fa-solid fa-envelope text-primary text-lg group-hover:scale-110 transition-transform inline-block"></i>
+                        <span
+                            class="font-label text-sm font-semibold text-on-surface-variant group-hover:text-primary">Email</span>
+                    </a>
+                    </a>
                 </div>
 
                 <!-- Technical Status card -->
@@ -1113,6 +1214,37 @@
                                 class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(0,209,255,0.8)] shrink-0"></span>
                             <span class="text-sm font-label text-on-surface-variant">Response Time: &lt; 24h</span>
                         </div>
+                        <div class="flex items-center gap-3">
+                            <span
+                                class="w-1.5 h-1.5 rounded-full bg-primary shadow-[0_0_8px_rgba(0,209,255,0.8)] shrink-0"></span>
+                            <a href="mailto:khairulanwaarrrr@gmail.com"
+                                class="text-sm font-label text-primary hover:underline underline-offset-2 transition-all">khairulanwaarrrr@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Open for -->
+                    <div class="mt-6 pt-6 border-t border-white/8">
+                        <p class="text-xs font-label font-bold uppercase tracking-[0.2em] text-primary/60 mb-4">Open For
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="flex items-center gap-1.5 bg-primary/8 border border-primary/20 text-primary text-xs font-label font-semibold px-3 py-1.5 rounded-full">
+                                <span class="w-1 h-1 rounded-full bg-primary animate-pulse"></span>Remote QA Roles
+                            </span>
+                            <span
+                                class="flex items-center gap-1.5 bg-primary/8 border border-primary/20 text-primary text-xs font-label font-semibold px-3 py-1.5 rounded-full">
+                                <span class="w-1 h-1 rounded-full bg-primary animate-pulse"></span>Freelance Testing
+                            </span>
+                            <span
+                                class="flex items-center gap-1.5 bg-primary/8 border border-primary/20 text-primary text-xs font-label font-semibold px-3 py-1.5 rounded-full">
+                                <span class="w-1 h-1 rounded-full bg-primary animate-pulse"></span>Automation Projects
+                            </span>
+                            <span
+                                class="flex items-center gap-1.5 bg-primary/8 border border-primary/20 text-primary text-xs font-label font-semibold px-3 py-1.5 rounded-full">
+                                <span class="w-1 h-1 rounded-full bg-primary animate-pulse"></span>Power BI
+                                Visualization
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -1135,6 +1267,8 @@
                     href="https://api.whatsapp.com/send?phone=6287893162489" target="_blank">WhatsApp</a>
                 <a class="hover:text-primary transition-colors underline decoration-primary/20 hover:decoration-primary underline-offset-4"
                     href="https://www.instagram.com/leopugjelly/" target="_blank">Instagram</a>
+                <a class="hover:text-primary transition-colors underline decoration-primary/20 hover:decoration-primary underline-offset-4"
+                    href="mailto:khairulanwaarrrr@gmail.com" target="_blank">Email</a>
             </div>
         </div>
     </footer>
